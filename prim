@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adelina & Alexandru</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="hero">
+    <h1 class="adelina">Adelina</h1>
+    <h1 class="si">&</h1>
+    <h1 class="alexandru">Alexandru</h1>
+    <p class="data">31 Mai 2025</p>
+  </div>
+  <div class="invitatie">
+    <div class="text">
+      <h1 class="casatorim">Ne căsătorim!</h1>
+      <p class="necasatorim">Cu inima plină de emoție, vă invităm să fiți parte din povestea noastră. Să ne întâlnim cu zâmbete și sărbătoare, și să păstrăm în suflete amintiri de neprețuit din această zi specială.</p>
+    </div>
+    <div class="imagine">
+      <img src="https://1drv.ms/i/c/02932729e2e7055b/IQShv6jTtdUMRahdRVFzxiO6AehWS4JZogK9dXtGFoqIGnM?width=1024" alt="" class="img-casatorim">
+    </div>
+    
+    
+  </div>
+  <div class="persoane">
+    <div class="alaturi">
+      <h1 class="casatorim">Oamenii noștri de suflet.</h1>
+      <p class="intro">Alături de care vom scrie povestea noastră.</p>
+    </div>
+    
+    <div class="nasi-parinti">
+      <div class="nasii">
+        <h2>Nașii</h2>
+        <h3>Cu suflete deschise, pășim în noua noastră călătorie alături de nașii noștri, <strong>Teodora și Florea Gogan</strong>.</h3>
+      </div>
+      <div class="img-centru">
+        <img src="https://1drv.ms/i/c/02932729e2e7055b/IQT2IU9_4QqmTojkLQGyHWctAdblBU6bljuUV33lSAy-slY?width=1024" alt="Nașii" class="img-persoanes" width="200px" height="200px">
+      </div>
+      <div class="parintii">
+        <h2>Părinții</h2>
+        <h3>Alături de noi sunt și părinții noștri dragi, <strong>Georgeta și Vasilică</strong> și <strong>Marica și Maricel Manole</strong>.</h3>
+      </div>
+    </div>
+    
+</div>
+  <div class="unde">
+    <div class="loc">
+      <h2>Detaliile evenimentului.</h2>
+      <p>Cand si Unde?</p>
+    </div>
+    <div class="biserica">
+      <div class="img">
+      <img src="" alt="">
+      </div>
+      <h3>Cununia religioasă</h3>
+      <h4>Catedrala Adormirea Maicii Domnului - Muncitoresc</h4>
+      <h4>Ora 16:00</h4>
+    </div>
+    <div class="locatie ">
+      <div class="img">
+       <img src="" alt="">
+      </div>
+      <h3>Locatie</h3>
+      <h4>Complex Atlantic (Sala Mare)</h4>
+      <h4>Ora 19:00</h4>
+    </div>
+  </div>
+  <div class="confirmare">
+    <div>
+      <h2>"Cel mai important pas e acela făcut alături de tine."</h2>
+    </div>
+    <h3>Vă rugăm să confirmați prezența până la data de 15 iunie 2024.</h3>
+    <h2>Multuim!</h2>
+    <h3>Adelina si Alexandu</h3>
+
+  </div>
+  
+  
+</body>
+</html>
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Playwrite CU", cursive; 
+  background-color: #f7e2db;
+}
+
+.hero {
+  background-image: url('https://1drv.ms/i/c/02932729e2e7055b/IQTfidGaCUqnTK4mvORLyiPUAQ4515UbzG1yKfQKPYUvxwY?width=1280&height=852');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.adelina,
+.si,
+.alexandru {
+  margin: 0;
+}
+
+.si {
+  margin: 0 10px;
+  font-size: 3rem;
+}
+
+.adelina,
+.alexandru {
+  font-size: 4rem;
+}
+
+.invitatie {
+  display: flex; /* Enables flexbox for horizontal alignment */
+  justify-content: space-between; /* Adds space between the text and image */
+  align-items: center; /* Centers the items vertically */
+  margin: 20px auto; /* Centers the entire section */
+  width: 80%; /* Controls the width of the section */
+  text-align: center; /* Centers text within the section */
+}
+
+.text {
+  width: 50%; /* Allocates 50% width for the text */
+}
+
+.imagine {
+  width: 50%; /* Allocates 50% width for the image */
+}
+
+.img-casatorim {
+  max-width: 100%; /* Ensures the image scales to fit its container */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* Optional: adds rounded corners */
+}
+ 
+@media (max-width: 768px) {
+  .invitatie {
+    flex-direction: column; /* Stacks elements vertically on small screens */
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .text, 
+  .imagine {
+    width: 100%; /* Each section takes full width on small screens */
+    margin-bottom: 20px; /* Adds some space between the text and image */
+  }
+}
+
+.nasi-parinti {
+  display: flex; /* Enables flexbox for horizontal alignment */
+  justify-content: space-between; /* Adds space between child elements */
+  align-items: center; /* Centers the items vertically */
+  margin: 20px auto; /* Centers the entire section */
+  width: 80%; /* Controls the width of the section */
+  text-align: center; /* Centers text within the section */
+}
+
+.nasii,
+.parintii {
+  width: 30%; /* Adjust width to fit all items in one line */
+}
+
+.img-centru {
+  width: 30%;
+  height: auto; /* Adjusted to ensure it fits within the layout */
+}
+
+.alaturi {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.unde {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.loc h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4a4a8c;
+  margin-bottom: 10px;
+}
+
+.loc p {
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.biserica, .locatie {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  background-color: #f7f7ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.biserica .img, .locatie .img {
+  width: 100px;
+  height: 100px;
+  background-color: #eaeaea;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.biserica img, .locatie img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.biserica h3, .locatie h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.biserica h4, .locatie h4 {
+  font-size: 1.1rem;
+  color: #777;
+}
+
+h3 {
+  color: #4a4a8c;
+  margin-bottom: 5px;
+}
+
+h4 {
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .biserica, .locatie {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+.confirmare {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.confirmare h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #4a4a8c;
+  margin-bottom: 20px;
+}
+
+.confirmare h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.confirmare h2:last-of-type {
+  font-size: 1.5rem;
+  color: #888;
+  margin-top: 30px;
+}
+
+.confirmare h3:last-of-type {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #4a4a8c;
+}
+
+.confirmare div {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .confirmare {
+      padding: 20px;
+  }
+  .confirmare h2 {
+      font-size: 1.6rem;
+  }
+  .confirmare h3 {
+      font-size: 1.1rem;
+  }
+}
